@@ -2417,6 +2417,8 @@ export class Builder {
     return getFetch()(url, this.addSdkHeaders(options)).then(res => res.json());
   }
 
+
+  // @TODO Own cdn to this
   get host() {
     switch (this.env) {
       case 'qa':
